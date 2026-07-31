@@ -1,98 +1,75 @@
-const services = [
-  { n: "01", title: "Diritto civile", text: "Assistenza giudiziale e stragiudiziale per privati, imprese e professionisti." },
-  { n: "02", title: "Diritto penale", text: "Difesa attenta e rigorosa in ogni fase del procedimento." },
-  { n: "03", title: "Domiciliazioni", text: "Supporto per colleghi presso gli uffici giudiziari di Oristano e Cagliari." },
+const areas = [
+  { number: "01", title: "Diritto civile", text: "Consulenza e assistenza, giudiziale e stragiudiziale, nella tutela dei diritti delle persone, delle famiglie e delle imprese." },
+  { number: "02", title: "Diritto penale", text: "Difesa e assistenza in ogni fase del procedimento penale, con attenzione alla persona e alla complessità del caso." },
+  { number: "03", title: "Contenzioso", text: "Valutazione preventiva, strategia processuale e gestione della controversia dinanzi agli uffici giudiziari competenti." },
+  { number: "04", title: "Domiciliazioni", text: "Collaborazione professionale per attività e domiciliazioni presso gli uffici giudiziari di Oristano e Cagliari." },
 ];
 
-const professionals = [
-  { initials: "AP", name: "Antonio Pinna Spada", role: "Avvocato · Patrocinante in Cassazione", mail: "pinnaspada@tiscali.it" },
-  { initials: "RP", name: "Renato Pinna Spada", role: "Avvocato · Patrocinante in Cassazione", mail: "renatopinnaspada@gmail.com" },
+const people = [
+  { name: "Salvatore Pinna Spada", label: "Avvocato", image: "/media/salvatore.jpg", className: "salvatore", email: "studiopinnaspada@virgilio.it", description: "Patrocinante in Cassazione. Entra nello Studio nel 1966 e ne prosegue la tradizione professionale iniziata dal fondatore." },
+  { name: "Antonio Pinna Spada", label: "Avvocato · Studio Associato", image: "/media/antonio.jpg", className: "antonio", email: "pinnaspada@tiscali.it", description: "Patrocinante in Cassazione. Fa parte dello Studio dal 1995 ed è associato dal 2022." },
+  { name: "Renato Pinna Spada", label: "Avvocato · Studio Associato", image: "/media/renato.jpg", className: "renato", email: "renatopinnaspada@gmail.com", description: "Patrocinante in Cassazione. Fa parte dello Studio dal 1998 ed è associato dal 2022." },
 ];
 
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Studio Legale Pinna Spada, home">
-          <span className="brand-mark">PS</span>
-          <span><strong>Pinna Spada</strong><small>Studio Legale · dal 1934</small></span>
-        </a>
-        <nav aria-label="Navigazione principale">
-          <a href="#studio">Lo studio</a><a href="#competenze">Competenze</a><a href="#professionisti">Professionisti</a>
-        </nav>
-        <a className="header-cta" href="#contatti">Contattaci <span>↗</span></a>
+      <div className="topline"><span>Studio Legale in Oristano dal 1934</span><div><a href="tel:+390783775053">0783 775053</a><a href="mailto:studiolegalepinnaspada@gmail.com">studiolegalepinnaspada@gmail.com</a></div></div>
+      <header>
+        <a className="logo" href="#home" aria-label="Studio Legale Pinna Spada, home"><span className="logo-monogram">PS</span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a>
+        <nav aria-label="Navigazione principale"><a href="#studio">Lo Studio</a><a href="#attivita">Attività</a><a href="#professionisti">Professionisti</a><a href="#storia">Storia</a><a href="#contatti">Contatti</a></nav>
+        <a className="nav-button" href="mailto:studiolegalepinnaspada@gmail.com">Richiedi un appuntamento</a>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> Oristano · Sardegna</p>
-          <h1>La tradizione<br />incontra il <em>diritto</em><br />di oggi.</h1>
-          <p className="hero-lead">Dal 1934 tuteliamo persone e imprese con competenza, ascolto e una visione concreta delle soluzioni.</p>
-          <div className="hero-actions">
-            <a className="button primary" href="mailto:studiolegalepinnaspada@gmail.com">Richiedi un contatto <span>↗</span></a>
-            <a className="text-link" href="#studio">Conosci lo studio <span>↓</span></a>
-          </div>
-          <div className="trust-row">
-            <div><strong>90+</strong><span>anni di esperienza</span></div>
-            <div><strong>2</strong><span>generazioni oggi al tuo fianco</span></div>
-            <div><strong>1934</strong><span>anno di fondazione</span></div>
-          </div>
+      <section className="hero" id="home">
+        <div className="hero-content">
+          <p className="kicker">Competenza · Indipendenza · Riservatezza</p>
+          <h1>La tutela dei vostri diritti,<br/><em>da oltre novant’anni.</em></h1>
+          <p className="intro">Lo Studio Legale Pinna Spada offre assistenza e difesa in materia civile e penale, con un approccio fondato sull’ascolto, sul rigore e sulla conoscenza del territorio.</p>
+          <div className="hero-actions"><a className="btn burgundy" href="#contatti">Parla con lo Studio</a><a className="link-arrow" href="#studio">Conosci la nostra storia <span>→</span></a></div>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="arch"><span className="arch-line one"/><span className="arch-line two"/><div className="seal">PS<small>1934</small></div></div>
-          <p>Radici solide.<br/>Sguardo avanti.</p>
-        </div>
+        <div className="hero-image"><img src="/media/studio.jpg" alt="Toga forense e macchina da scrivere, archivio dello Studio Legale Pinna Spada"/><div className="founded"><small>FONDATO NEL</small><strong>1934</strong><span>ORISTANO</span></div></div>
       </section>
 
-      <section className="statement" id="studio">
-        <p className="section-tag">01 · Lo studio</p>
-        <div>
-          <h2>Un punto di riferimento<br />da oltre novant’anni.</h2>
-          <p>Fondato dall’avvocato Antonio Pinna Spada nel 1934, lo Studio opera a pochi passi dal Tribunale di Oristano. Una storia professionale costruita sulla fiducia, oggi portata avanti dallo Studio Associato Avvocati Antonio e Renato Pinna Spada.</p>
-          <a className="text-link dark" href="#storia">Scopri la nostra storia <span>→</span></a>
-        </div>
+      <section className="intro-section" id="studio">
+        <div className="section-label">Lo Studio</div>
+        <div className="intro-main"><h2>Una tradizione professionale<br/>che attraversa le generazioni.</h2><p>Fondato dall’Avv. Antonio Pinna Spada nel 1934, lo Studio ha accompagnato l’evoluzione della giustizia e della società sarda mantenendo costanti i propri valori: preparazione, serietà e rapporto diretto con l’assistito.</p></div>
+        <aside><strong>Oristano</strong><span>Via San Francesco 18</span><p>A pochi passi dal Tribunale, nel centro della città.</p><a className="link-arrow" href="https://maps.google.com/?q=Via+San+Francesco+18+Oristano" target="_blank" rel="noreferrer">Indicazioni <span>↗</span></a></aside>
       </section>
 
-      <section className="services" id="competenze">
-        <div className="section-heading"><p className="section-tag light">02 · Competenze</p><h2>Esperienza che diventa<br /><em>soluzione.</em></h2></div>
-        <div className="service-grid">
-          {services.map((s) => <article key={s.n}><span>{s.n}</span><h3>{s.title}</h3><p>{s.text}</p><a href="#contatti" aria-label={`Contattaci per ${s.title}`}>Approfondisci <b>↗</b></a></article>)}
-        </div>
+      <section className="practice" id="attivita">
+        <div className="practice-head"><div><p className="eyebrow">Aree di attività</p><h2>Esperienza giuridica.<br/>Risposte concrete.</h2></div><p>Ogni questione viene esaminata personalmente, individuando con chiarezza le opzioni disponibili e il percorso più adeguato.</p></div>
+        <div className="areas">{areas.map((area)=><article key={area.number}><span>{area.number}</span><h3>{area.title}</h3><p>{area.text}</p><a href="#contatti" aria-label={`Contatta lo Studio per ${area.title}`}>Richiedi informazioni →</a></article>)}</div>
+      </section>
+
+      <section className="professionals" id="professionisti">
+        <div className="professional-heading"><p className="eyebrow">I professionisti</p><h2>Esperienza, continuità<br/>e responsabilità.</h2><p>Tre generazioni, un unico metodo di lavoro: attenzione personale, studio approfondito e piena trasparenza nel rapporto professionale.</p></div>
+        <div className="people">{people.map((person)=><article key={person.name}><div className={`person-photo ${person.className}`}><img src={person.image} alt={`Avv. ${person.name}`}/></div><div className="person-copy"><span>{person.label}</span><h3>{person.name}</h3><p>{person.description}</p><a href={`mailto:${person.email}`}>Contatta il professionista <b>→</b></a></div></article>)}</div>
       </section>
 
       <section className="history" id="storia">
-        <div className="history-visual"><span className="date">1934</span><div className="monument">§</div><p>Oristano<br/>Sardegna</p></div>
-        <div className="history-copy">
-          <p className="section-tag">03 · La storia</p>
-          <h2>Una storia di famiglia.<br />Una responsabilità<br />verso il futuro.</h2>
-          <p>Dalla prima sede in Piazza Eleonora all’attuale studio di Via San Francesco, ogni generazione ha unito rigore professionale e presenza nel territorio.</p>
-          <ol>
-            <li><span>1934</span>Fondazione dello Studio</li>
-            <li><span>1963</span>Antonio Pinna Spada presiede l’Ordine di Oristano</li>
-            <li><span>2022</span>Nasce lo Studio Legale Associato</li>
-          </ol>
+        <div className="history-title"><p className="eyebrow">La nostra storia</p><h2>Dal 1934,<br/>nel diritto<br/>e nel territorio.</h2></div>
+        <div className="timeline">
+          <article><time>1934</time><div><h3>La fondazione</h3><p>L’Avv. Antonio Pinna Spada inizia l’attività professionale con l’Avv. Francesco Sanna Randaccio nella storica sede di Piazza Municipio, oggi Piazza Eleonora.</p></div></article>
+          <article><time>1963</time><div><h3>Al servizio dell’Avvocatura</h3><p>Antonio Pinna Spada assume la presidenza del Consiglio dell’Ordine degli Avvocati di Oristano, mantenendola fino al 1978.</p></div></article>
+          <article><time>1966—1998</time><div><h3>La continuità</h3><p>Entrano nello Studio Salvatore Pinna Spada nel 1966, Antonio nel 1995 e Renato nel 1998.</p></div></article>
+          <article><time>2022</time><div><h3>Lo Studio Associato</h3><p>Viene costituito lo Studio Legale Associato Avvocati Antonio e Renato Pinna Spada.</p></div></article>
         </div>
       </section>
 
-      <section className="team" id="professionisti">
-        <div className="section-heading paper"><p className="section-tag">04 · Professionisti</p><h2>Persone, prima<br />ancora che <em>avvocati.</em></h2></div>
-        <div className="team-grid">
-          {professionals.map((p) => <article key={p.name}><div className="portrait"><span>{p.initials}</span></div><div><h3>{p.name}</h3><p>{p.role}</p><a href={`mailto:${p.mail}`}>Scrivi all’avvocato <span>↗</span></a></div></article>)}
+      <section className="services-strip"><div><span>Per i colleghi</span><h2>Domiciliazioni presso Oristano e Cagliari</h2></div><p>Corte d’Appello di Cagliari · Tribunali di Oristano e Cagliari · Giudici di Pace di Oristano e Cagliari</p><a className="btn light" href="mailto:studiolegalepinnaspada@gmail.com?subject=Richiesta%20domiciliazione">Invia una richiesta</a></section>
+
+      <section className="contacts" id="contatti">
+        <div className="contact-title"><p className="eyebrow">Contatti</p><h2>Contattate<br/>lo Studio.</h2><p>La segreteria è a disposizione per raccogliere la richiesta e concordare un appuntamento.</p></div>
+        <div className="contact-grid">
+          <div><span>SEDE</span><strong>Via San Francesco 18<br/>09170 Oristano</strong><a href="https://maps.google.com/?q=Via+San+Francesco+18+Oristano" target="_blank" rel="noreferrer">Apri in Google Maps ↗</a></div>
+          <div><span>TELEFONO</span><a className="large-contact" href="tel:+390783775053">0783 775053</a><a className="large-contact" href="tel:+390783775000">0783 775000</a><small>Fax 0783 775263</small></div>
+          <div><span>EMAIL</span><a href="mailto:studiolegalepinnaspada@gmail.com">studiolegalepinnaspada<br/>@gmail.com</a><small>PEC</small><a href="mailto:studiolegalepinnaspada@pec.it">studiolegalepinnaspada@pec.it</a></div>
+          <div className="digital-box"><span>SERVIZI DIGITALI</span><h3>PinnaSpada.it</h3><p>Accedi alla piattaforma digitale dello Studio.</p><a href="https://pinnaspada.it" target="_blank" rel="noreferrer">Vai alla piattaforma →</a></div>
         </div>
       </section>
 
-      <section className="digital">
-        <div><p className="eyebrow gold"><span /> Servizi digitali</p><h2>Il tuo studio,<br />anche <em>online.</em></h2><p>Accedi agli strumenti digitali Pinna Spada: un punto unico, semplice e diretto, pensato per rendere più agevole il rapporto con lo Studio.</p><a className="button outline" href="https://pinnaspada.it" target="_blank" rel="noreferrer">Vai a PinnaSpada.it <span>↗</span></a></div>
-        <div className="phone" aria-hidden="true"><div className="phone-top"/><div className="phone-brand"><b>PS</b><span>PINNA SPADA<small>AREA DIGITALE</small></span></div><div className="phone-card"><small>BENVENUTO</small><strong>Come possiamo<br/>aiutarti?</strong><i>→</i></div><div className="phone-lines"><span/><span/><span/></div></div>
-      </section>
-
-      <section className="contact" id="contatti">
-        <p className="section-tag">05 · Contatti</p>
-        <div><h2>Parliamone.<br /><em>Siamo qui.</em></h2><p>Raccontaci brevemente la tua esigenza. La segreteria ti ricontatterà per fissare un primo confronto.</p><a className="button primary dark-button" href="mailto:studiolegalepinnaspada@gmail.com">Scrivi allo Studio <span>↗</span></a></div>
-        <address><div><small>ORISTANO</small><strong>Via San Francesco, 18</strong><span>09170 Oristano (OR)</span><a href="https://maps.google.com/?q=Via+San+Francesco+18+Oristano" target="_blank" rel="noreferrer">Apri la mappa ↗</a></div><div><small>RECAPITI</small><a href="tel:+390783775053">+39 0783 775053</a><a href="tel:+390783775000">+39 0783 775000</a><a href="mailto:studiolegalepinnaspada@gmail.com">studiolegalepinnaspada@gmail.com</a></div></address>
-      </section>
-
-      <footer><div className="brand footer-brand"><span className="brand-mark">PS</span><span><strong>Pinna Spada</strong><small>Studio Legale · dal 1934</small></span></div><p>© 2026 Studio Legale Associato Avvocati Antonio e Renato Pinna Spada · P.IVA 01259770954</p><div><a href="mailto:studiolegalepinnaspada@pec.it">PEC</a><a href="#">Privacy</a><a href="#">Cookie</a></div></footer>
+      <footer><a className="logo inverse" href="#home"><span className="logo-monogram">PS</span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a><p>Studio Legale Associato Avvocati Antonio e Renato Pinna Spada<br/>P.IVA 01259770954 · Codice destinatario KRRH69B</p><div><a href="#">Privacy policy</a><a href="#">Cookie policy</a><span>© 2026</span></div></footer>
     </main>
   );
 }
