@@ -6,7 +6,7 @@ const areas = [
 ];
 
 const people = [
-  { name: "Salvatore Pinna Spada", label: "Avvocato", image: "/media/salvatore.jpg", className: "salvatore", email: "studiopinnaspada@virgilio.it", description: "Patrocinante in Cassazione. Entra nello Studio nel 1966 e ne prosegue la tradizione professionale iniziata dal fondatore." },
+  { name: "Salvatore Pinna Spada", label: "Avvocato", image: "/media/salvatore.jpg", className: "salvatore", email: "studiopinnaspada@gmail.com", pec: "avv.pinnaspada@pec.it", description: "Patrocinante in Cassazione. Entra nello Studio nel 1966 e ne prosegue la tradizione professionale iniziata dal fondatore." },
   { name: "Antonio Pinna Spada", label: "Avvocato · Studio Associato", image: "/media/antonio.jpg", className: "antonio", email: "legale@pinnaspada.it", pec: "pinnaspada@pec.it", description: "Patrocinante in Cassazione. Fa parte dello Studio dal 1995 ed è associato dal 2022." },
   { name: "Renato Pinna Spada", label: "Avvocato · Studio Associato", image: "/media/renato.jpg", className: "renato", email: "renatops@tiscali.it", pec: "renatops@pec.it", description: "Patrocinante in Cassazione. Fa parte dello Studio dal 1998 ed è associato dal 2022." },
 ];
@@ -24,11 +24,11 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="hero-content">
           <p className="kicker">Competenza · Indipendenza · Riservatezza</p>
-          <h1>La tutela dei vostri diritti,<br/><em>da oltre novant’anni.</em></h1>
+          <h1><span>La tutela dei vostri diritti,</span><em>da oltre novant’anni.</em></h1>
           <p className="intro">Lo Studio Legale Pinna Spada offre assistenza e difesa in materia civile e penale, con un approccio fondato sull’ascolto, sul rigore e sulla conoscenza del territorio.</p>
           <div className="hero-actions"><a className="btn burgundy" href="#contatti">Parla con lo Studio</a><a className="link-arrow" href="#studio">Conosci la nostra storia <span>→</span></a></div>
         </div>
-        <div className="hero-image"><img src="/media/studio.jpg" alt="Toga forense e macchina da scrivere, archivio dello Studio Legale Pinna Spada"/><div className="founded"><small>FONDATO NEL</small><strong>1934</strong><span>ORISTANO</span></div></div>
+        <div className="hero-image"><img src="/media/studio.jpg" alt="Toga forense e macchina da scrivere, archivio dello Studio Legale Pinna Spada"/></div>
       </section>
 
       <section className="intro-section" id="studio">
