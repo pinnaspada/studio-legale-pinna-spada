@@ -28,7 +28,7 @@ export default function Home() {
           <p className="intro">Lo Studio Legale Pinna Spada offre assistenza e difesa in materia civile e penale, con un approccio fondato sull’ascolto, sul rigore e sulla conoscenza del territorio.</p>
           <div className="hero-actions"><a className="btn burgundy" href="#contatti">Parla con lo Studio</a><a className="link-arrow" href="#studio">Conosci la nostra storia <span>→</span></a></div>
         </div>
-        <div className="hero-image"><img src="/media/studio.jpg" alt="Toga forense e macchina da scrivere, archivio dello Studio Legale Pinna Spada"/></div>
+        <div className="hero-image"><img src="/media/hero-studio-temporaneo.png" alt="Libreria giuridica e scrivania, immagine editoriale temporanea"/></div>
       </section>
 
       <section className="intro-section" id="studio">
