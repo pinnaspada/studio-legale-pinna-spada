@@ -28,7 +28,7 @@ export default function Home() {
           <p className="intro">Lo Studio Legale Pinna Spada offre assistenza e difesa in materia civile e penale, con un approccio fondato sull’ascolto, sul rigore e sulla conoscenza del territorio.</p>
           <div className="hero-actions"><a className="btn burgundy" href="#contatti">Parla con lo Studio</a><a className="link-arrow" href="#studio">Conosci la nostra storia <span>→</span></a></div>
         </div>
-        <div className="hero-image"><img src="/media/hero-studio-moderno.png" alt="Sala riunioni contemporanea con computer portatile e schermo per videoconferenze"/></div>
+        <div className="hero-image"><img src="/media/hero-studio-moderno-oristano.png" alt="Sala riunioni contemporanea con vista sulla Torre di Mariano II e sulla Cattedrale di Oristano"/></div>
       </section>
 
       <section className="intro-section" id="studio">
