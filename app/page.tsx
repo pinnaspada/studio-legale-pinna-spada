@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <div className="topline"><span>Studio Legale in Oristano dal 1934</span><div><a href="tel:+390783775053">0783 775053</a><a href="mailto:studiolegalepinnaspada@gmail.com">studiolegalepinnaspada@gmail.com</a></div></div>
       <header>
-        <a className="logo" href="#home" aria-label="Studio Legale Pinna Spada, home"><span className="logo-monogram">PS</span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a>
+        <a className="logo" href="#home" aria-label="Studio Legale Pinna Spada, home"><span className="logo-image"><img src="/media/logo-studio-pinna-spada.png" alt=""/></span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a>
         <nav aria-label="Navigazione principale"><a href="#studio">Lo Studio</a><a href="#attivita">Attività</a><a href="#professionisti">Professionisti</a><a href="#storia">Storia</a><a href="#contatti">Contatti</a></nav>
         <a className="nav-button" href="mailto:studiolegalepinnaspada@gmail.com">Richiedi un appuntamento</a>
       </header>
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><a className="logo inverse" href="#home"><span className="logo-monogram">PS</span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a><p>Studio Legale Associato Avvocati Antonio e Renato Pinna Spada<br/>P.IVA 01259770954 · Codice destinatario KRRH69B</p><div><a href="#">Privacy policy</a><a href="#">Cookie policy</a><span>© 2026</span></div></footer>
+      <footer><a className="logo inverse" href="#home"><span className="logo-image"><img src="/media/logo-studio-pinna-spada.png" alt=""/></span><span><strong>Studio Legale</strong><b>Pinna Spada</b></span></a><p>Studio Legale Associato Avvocati Antonio e Renato Pinna Spada<br/>P.IVA 01259770954 · Codice destinatario KRRH69B</p><div><a href="#">Privacy policy</a><a href="#">Cookie policy</a><span>© 2026</span></div></footer>
     </main>
   );
 }
