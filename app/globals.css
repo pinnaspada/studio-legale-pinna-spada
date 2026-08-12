@@ -14,3 +14,8 @@
 @media(max-width:900px){.hero h1 span{white-space:normal}.logo-image{width:72px;height:72px;flex-basis:72px}}
 @media(max-width:480px){.logo-image{width:64px;height:64px;flex-basis:64px}.brand-name{font-size:15px;font-weight:700}}
 .hero-image img{filter:saturate(.72) contrast(1.03);opacity:.93;object-position:center}
+header{height:116px}.logo-image{width:110px;height:110px;flex-basis:110px;background:transparent}.logo-image img{object-fit:contain}.hero-image img{filter:saturate(.9) contrast(1.02);opacity:1;object-position:center}.hero-image:after{background:linear-gradient(90deg,rgba(20,42,59,.1),transparent 48%)}
+@media(max-width:1250px){header{height:104px}.logo-image{width:96px;height:96px;flex-basis:96px}}
+@media(max-width:900px){.logo-image{width:82px;height:82px;flex-basis:82px}}
+@media(max-width:760px){header{height:88px}.logo-image{width:76px;height:76px;flex-basis:76px}}
+@media(max-width:480px){.logo-image{width:70px;height:70px;flex-basis:70px}}
